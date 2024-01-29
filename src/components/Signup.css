@@ -1,0 +1,106 @@
+.signup 
+{
+    height: 700px; 
+    width: 50%; 
+    background-color: whitesmoke;
+    margin: auto  ; 
+    margin-top: 10px;
+    border-radius: 25px ; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+.signup-page 
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+}
+.signup-page input 
+{
+    height: 40px;
+    width: 350px;  
+    border-radius: 10px;
+    border: 2px solid rgb(214, 56, 56);
+    font-weight: 600; 
+    color: black; 
+}
+.signup-page span
+{
+    color: blue;
+}
+.signup-page h2
+{
+    color: maroon;
+}
+.signup-to-login 
+{
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px; 
+}
+.signup-to-login p 
+{
+    color: red; 
+    font-weight: 600; 
+    font-size: 20px ;
+}
+
+@media (max-width:600px)
+{
+    .signup 
+{
+    height: auto; 
+    width: 50%; 
+    background-color: whitesmoke;
+    margin: auto  ; 
+    margin-top: 10px;
+    border-radius: 25px ; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+.signup-page 
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: auto;
+}
+.signup-page input 
+{
+    height: auto;
+    width: auto;  
+    border-radius: 10px;
+    border: 2px solid rgb(214, 56, 56);
+    font-weight: 600; 
+    color: black; 
+}
+.signup-page span
+{
+    color: blue;
+}
+.signup-page h2
+{
+    color: maroon;
+}
+.signup-to-login 
+{
+    display: flex; 
+    gap: auto; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px; 
+}
+.signup-to-login p 
+{
+    color: red; 
+    font-weight: 600; 
+    font-size: 14px ;
+}
+}

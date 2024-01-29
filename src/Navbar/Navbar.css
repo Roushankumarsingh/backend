@@ -1,0 +1,319 @@
+/* .parent 
+{
+    height: 100px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    color: #fff;
+    background-color: #f33444;
+}
+.nav-img 
+{
+    display: flex; 
+    height: 80px;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+
+}
+.nav-img h3 
+{
+    font-weight: 800; 
+    font-size: 20px;
+    text-decoration:solid;
+    font-style: italic;
+}
+.nav-img  img
+{
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.nav-img img:hover 
+{
+    height: 120px; 
+    width: 120px;
+}
+.home 
+{
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.home hr 
+{
+    color: white; 
+    height: 5px; 
+    background-color: white; 
+}
+.home button 
+{
+    height: 40px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.home button:hover 
+{
+    background-color: red;
+    width: 90px; 
+    height: 45px;
+}
+.login-after 
+{
+    display: flex; 
+    width: 40%; 
+    gap: 40px;
+    align-items: center;
+}
+.login-before 
+{
+    display: flex; 
+    gap: 20px;
+}
+.search-bar 
+{
+    display: flex; 
+    gap: 15px;
+    justify-content: center; 
+    align-items: center;
+}
+.search-bar  input
+{
+    height: 50px; 
+    width: 400px;  
+    border-radius: 10px; 
+    border: 2px solid white;
+    font-size: 16px; 
+    font-weight: 600;
+    outline: none;
+    color: grey;
+}
+.search-bar input:hover 
+{
+    border: 5px solid #f20519;
+}
+.search-bar i 
+{
+    font-size: 20px;
+    height: 50px; 
+    width: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%;
+    border:2px solid white;
+    object-fit: fill;
+    cursor: pointer;
+}
+.search-bar i:hover 
+{
+    height: 60px;
+    width: 60px; 
+}
+.user-interface h2 
+{
+    cursor: pointer;
+}
+select 
+{
+    height: 50px; 
+    width: 100px; 
+    border-radius: 10px; 
+    border: 2px solid white ; 
+    text-decoration: none;
+    background-color: #f33444; 
+    color: white;
+    font-weight: 600;
+    font-size: 18px; 
+}
+.home i 
+{
+    font-size:30px; 
+}
+.cart-tick 
+{
+    position: relative;
+    left: 18px;
+    color: white;
+} */
+/* Common styles for all screen sizes */
+.parent {
+    height: 100px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    color: #fff;
+    background-color: #f33444;
+}
+
+.nav-img {
+    display: flex; 
+    height: 80px;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-img h3 {
+    font-weight: 800; 
+    font-size: 20px;
+    text-decoration: solid;
+    font-style: italic;
+}
+
+.nav-img img {
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.nav-img img:hover {
+    height: 120px; 
+    width: 120px;
+}
+
+.home {
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.home hr {
+    color: white; 
+    height: 5px; 
+    background-color: white; 
+}
+
+.home button {
+    height: 40px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background-color: red;
+    width: 90px; 
+    height: 45px;
+}
+
+.login-after {
+    display: flex; 
+    width: 40%; 
+    gap: 40px;
+    align-items: center;
+}
+
+.login-before {
+    display: flex; 
+    gap: 20px;
+}
+
+.search-bar {
+    display: flex; 
+    gap: 15px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.search-bar input {
+    height: 50px; 
+    width: 400px;  
+    border-radius: 10px; 
+    border: 2px solid white;
+    font-size: 16px; 
+    font-weight: 600;
+    outline: none;
+    color: grey;
+}
+
+.search-bar input:hover {
+    border: 5px solid #f20519;
+}
+
+.search-bar i {
+    font-size: 20px;
+    height: 50px; 
+    width: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%;
+    border:2px solid white;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+.search-bar i:hover {
+    height: 60px;
+    width: 60px; 
+}
+
+.user-interface h2 {
+    cursor: pointer;
+}
+
+select {
+    height: 50px; 
+    width: 100px; 
+    border-radius: 10px; 
+    border: 2px solid white; 
+    text-decoration: none;
+    background-color: #f33444; 
+    color: white;
+    font-weight: 600;
+    font-size: 18px; 
+}
+
+.home i {
+    font-size: 30px; 
+}
+
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .nav-img {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-img img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .login-after,
+    .login-before {
+        flex-direction: row;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .home button {
+        width: 100%;
+    }
+}
