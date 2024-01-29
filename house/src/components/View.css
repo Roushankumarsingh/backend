@@ -1,0 +1,143 @@
+.user-class
+{
+    height: 615px; 
+    background-color: rgb(195, 224, 199);
+    width: 800px;
+    margin: auto;
+    margin-top: 10px; 
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+}
+.img  img
+{
+    height: 350px; 
+    width: 800px;
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px;
+    object-fit: fill;
+}
+.text-content
+{
+   display: flex; 
+   align-items: center; 
+   flex-direction: column; 
+   gap: 15px; 
+   font-size: 20px;
+}
+.text-content span 
+{
+    color: maroon; 
+}
+.text-content h4 
+{
+    color: red;
+    text-align: center;
+}
+.btn 
+{
+    display: flex; 
+    gap: 100px; 
+}
+button 
+{
+    height: 35px; 
+    width: 100px;
+    border-radius: 10px; 
+    color: white; 
+    background-color:#f33448;
+    font-size: 15px;
+    font-weight: 700;
+    outline: none; 
+    border: 2px solid white;
+    cursor: pointer;
+}
+button:hover 
+{
+    height: 40px; 
+    width: 110px; 
+    font-size: 18px;
+}
+.empty-content 
+{
+
+    height: 300px; 
+    margin-top: 200px; 
+    margin-left: 400px;
+    font-size: 25px; 
+    color: rgb(16, 34, 230); 
+}
+@media (max-width:700px) 
+{
+    .user-class
+    {
+        height: auto; 
+        background-color: rgb(195, 224, 199);
+        width:auto;
+        margin: auto;
+        margin-top: 10px; 
+        border-radius: 20px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img  img
+    {
+        height: 200px; 
+        width:200px;
+        border-top-right-radius: 20px; 
+        border-top-left-radius: 20px;
+        object-fit: fill;
+    }
+    .text-content
+    {
+       display: flex; 
+       align-items: center; 
+       flex-direction: column; 
+       gap: auto; 
+       font-size: 14px;
+    }
+    .text-content span 
+    {
+        color: maroon; 
+    }
+    .text-content h4 
+    {
+        color: red;
+        text-align: center;
+    }
+    .btn 
+    {
+        display: flex; 
+        gap: auto; 
+    }
+    button 
+    {
+        height: 35px; 
+        width: 130px;
+        border-radius: 10px; 
+        color: white; 
+        background-color:#f33448;
+        font-size: 14px;
+        font-weight: 700;
+        outline: none; 
+        border: 2px solid white;
+        cursor: pointer;
+    }
+    button:hover 
+    {
+        height: 40px; 
+        width: 110px; 
+        font-size: 18px;
+    }
+    .empty-content 
+    {
+    
+        height: auto; 
+        margin-top: auto; 
+        margin-left: auto;
+        font-size: 25px; 
+        color: rgb(16, 34, 230); 
+    } 
+}

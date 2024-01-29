@@ -1,0 +1,105 @@
+.login 
+{
+    display: flex; 
+    flex-direction: column;
+}
+.login-feature 
+{
+    height: 400px;
+    background-color:rgb(248, 228, 228) ;
+    width: 50%; 
+    margin: auto; 
+    margin-top: 40px;
+    border-radius: 25px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.login-feature input 
+{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px; 
+    outline: none; 
+    border: 2px solid rgb(214, 56, 56);
+    background-color: rgb(233, 243, 237);
+    font-weight: 550;
+}
+.login-feature h2
+{
+    color: crimson;
+}
+.login-feature p 
+{
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+}
+.login-feature p span 
+{
+    color: rgb(254, 60, 30);
+    font-size: 20px; 
+    font-weight: 700; 
+}
+.back-btn 
+{
+    margin-top: 20px; 
+    align-self: center;
+}
+@media ( max-width : 600px) 
+{
+    .login 
+{
+    display: flex; 
+    flex-direction: column;
+}
+.login-feature 
+{
+    height: auto;
+    background-color:rgb(248, 228, 228) ;
+    width: 50%; 
+    margin: auto; 
+    margin-top: 40px;
+    border-radius: 25px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: auto;
+}
+.login-feature input 
+{
+    height: auto;
+    width: auto;
+    border-radius: 10px; 
+    outline: none; 
+    border: 2px solid rgb(214, 56, 56);
+    background-color: rgb(233, 243, 237);
+    font-weight: 550;
+}
+.login-feature h2
+{
+    color: crimson;
+}
+.login-feature p 
+{
+    display: flex; 
+    gap: auto; 
+    justify-content: center; 
+    align-items: center;
+}
+.login-feature p span 
+{
+    color: rgb(254, 60, 30);
+    font-size: 14px; 
+    font-weight: 700; 
+}
+.back-btn 
+{
+    margin-top: 20px; 
+    align-self: center;
+}
+}

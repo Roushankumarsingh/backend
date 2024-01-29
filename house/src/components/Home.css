@@ -1,0 +1,37 @@
+.content 
+{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.cart-badge 
+{
+    position: relative; 
+    left: 18px; 
+}
+
+@media (max-width:1000px)
+{
+    .content 
+    {
+        display: grid ; 
+        grid-template-columns: 1fr 1fr ;
+    }
+    .cart-badge
+    {
+        position: relative;
+        right: 18px;
+    }
+}
+@media (max-width:700px)
+{
+    .content 
+    {
+        display: grid ; 
+        grid-template-columns: 1fr 1fr ;
+    }
+    .cart-badge
+    {
+        position: relative;
+        right: 18px;
+    }
+}
