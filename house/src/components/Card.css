@@ -46,3 +46,45 @@
 {
     margin: auto;
 }
+
+@media screen and (max-width:650px)
+{
+    .container 
+{
+    margin-left: -10px;
+    display: flex; 
+    flex-direction: column; 
+    height: auto;
+    width: 200px;
+    border: 0.1px solid rgb(10, 206, 69); 
+    border-radius: 20px;
+    background-color: white;
+}
+.img-section img
+{
+    height: 100px ; 
+    background-size: cover;
+    width: 200px ; 
+    object-fit: cover; 
+    border-radius: 20px;
+}
+.detail-section
+{
+    display: flex; 
+    flex-direction: column; 
+    color: black; 
+    gap: auto;
+    margin: auto;
+}
+.detail-section span 
+{
+    color: red; 
+    text-decoration: underline;
+    font-size: 14px; 
+    font-weight: 700;
+}
+.detail-section button 
+{
+    margin: auto;
+}
+}

@@ -11,6 +11,10 @@ import { useDispatchCart } from '../components/ContextReducer'
 import wanderlust from "./wanderlust.webp"
 
 export default function Navbar() {
+
+    const[condition , setCondition] = useState(false) ; 
+
+
     const [tag, setTag] = useState("Home");
     let data = useCart();
 
@@ -91,7 +95,7 @@ export default function Navbar() {
             {!localStorage.getItem("authToken") ?
                 <div className='login-before' >
 
-                    <div className="home">
+                    <div className="homes">
                         <Link to="/login" ><button      >login  </button></Link>
                     </div>
                     <div className="home">
@@ -104,7 +108,7 @@ export default function Navbar() {
                             <div className='cart-tick'  > {data.length} </div>
                             <h3 onClick={() => setTag("My Cart")}   > <Link to="/mycart" style={{ textDecoration: "none", color: "white" }}   > <i className="fa-solid fa-cart-shopping"></i>  </Link> {tag == "My Cart" ? <hr /> : <></>}  </h3>
                         </div>
-                        <select onChange={handleSelectChange} >
+                        <select onChange={handleSelectChange} className='selectChange' >
                             <option value="settings"   >Profile </option>
                             <option  value="about"   > About </option>
                             <option value="home"  >Home</option>
@@ -118,9 +122,25 @@ export default function Navbar() {
                             </option>
                             
                         </select>
+                        <select onChange={handleSelectChange}   className='afterChange'   >
+                            <option value="settings"   >Profile </option>
+                            <option value="about"  >About</option>
+                            <option value="home"  >Home</option>
+                            <option  value="logout"       >Log out
+                            </option>
+                            <option value="myorders"  > My Orders</option>
+                          
+                            
+                            <option value="todays"  > Today's Deal </option>
+                            <option   value="user"     >
+                                User
+                            </option>
+                           
+                        </select>
                     </div>
                 </div>
             }
+            
 
         </div>
     )

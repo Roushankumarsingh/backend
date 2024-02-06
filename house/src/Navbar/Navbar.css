@@ -1,4 +1,4 @@
-/* .parent 
+.parent 
 {
     height: 100px;
     display: flex; 
@@ -143,9 +143,13 @@ select
     position: relative;
     left: 18px;
     color: white;
-} */
-/* Common styles for all screen sizes */
-.parent {
+} 
+.afterChange 
+{
+    display: none; 
+}
+/* Common styles for all screen sizes
+/* .parent {
     height: 100px;
     display: flex; 
     justify-content: space-around; 
@@ -281,7 +285,7 @@ select {
 
 .home i {
     font-size: 30px; 
-}
+} */
 
 @media (max-width: 768px) {
     .parent {
@@ -315,5 +319,62 @@ select {
 
     .home button {
         width: 100%;
+    }
+    .onhidden 
+    {
+        position: absolute; 
+        top: 4rem; 
+        right: 1rem; 
+    }
+    .home 
+    {
+        display: none; 
+    }
+    .afterChange
+    {
+        display: flex; 
+        height: 30px; 
+        width: 60px ; 
+        font-size: 14px; 
+     }
+    .selectChange 
+    {
+        display: none; 
+    }
+    .search-bar
+    {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        gap: 0.3rem;
+    }
+    .search-bar input 
+    {
+        height: auto; 
+        width: 80px; 
+        border-radius: 10px;
+    }
+    .search-bar i 
+    {
+        height: 30px; 
+        width: 30px; 
+    }
+    .afterChange 
+    {
+        position: relative; 
+        right: 2rem;
+    }
+    .nav-img img 
+    {
+        height: auto; 
+        width: 50px ;
+    }
+    #login 
+    {
+        display: flex; 
+    }
+    .homes 
+    {
+        display: flex; 
     }
 }

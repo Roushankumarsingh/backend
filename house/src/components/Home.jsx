@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
 
+  const [condition , setCondition] = useState(false) ; 
+
   const [userData , setUserData] = useState([]);
 
   const loadData = async()=>
@@ -49,6 +51,7 @@ export default function Home() {
   const valueChange = (event) => {
       // console.log(event.target.value) ; 
       setSearch(event.target.value);
+
   }
 
   const valueTaken = () => {
@@ -104,6 +107,7 @@ export default function Home() {
       });
       console.log(filteredData);
       setUserData(filteredData);
+      // setSearch("") ; 
     };
 
  
@@ -124,7 +128,7 @@ export default function Home() {
             {!localStorage.getItem("authToken") ?
                 <div className='login-before' >
 
-                    <div className="home">
+                    <div className="homes" >
                         <Link to="/login" ><button      >login  </button></Link>
                     </div>
                     <div className="home">
@@ -138,7 +142,22 @@ export default function Home() {
                             <div className="cart-badge">{data.length} </div><i className="fa-solid fa-cart-shopping">  </i>
                            </Link> {tag == "My Cart" ? <hr /> : <></>}  </h3>
                         </div>
-                        <select onChange={handleSelectChange} >
+                        <select onChange={handleSelectChange}   className='selectChange'   >
+                            <option value="settings"   >Profile </option>
+                            <option value="about"  >About</option>
+                            <option value="home"  >Home</option>
+                            <option  value="logout"       >Log out
+                            </option>
+                            <option value="myorders"  > My Orders</option>
+                          
+                            
+                            <option value="todays"  > Today's Deal </option>
+                            <option   value="user"     >
+                                User
+                            </option>
+                           
+                        </select>
+                        <select onChange={handleSelectChange}   className='afterChange'   >
                             <option value="settings"   >Profile </option>
                             <option value="about"  >About</option>
                             <option value="home"  >Home</option>
